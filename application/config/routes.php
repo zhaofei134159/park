@@ -19,7 +19,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 | Please see the user guide for complete details:
 |
-|	http://codeigniter.com/user_guide/general/routing.html
+|	https://codeigniter.com/user_guide/general/routing.html
 |
 | -------------------------------------------------------------------------
 | RESERVED ROUTES
@@ -52,3 +52,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'index';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+
+$route['backstage'] = "backstage/login";
+$route['home/blog/(:num)'] = "home/blog/index/$1";
+$route['home/blog/(:num)/art_list'] = "home/blog/art_list/$1";
+$route['home/blog/(:num)/about'] = "home/blog/about/$1";
+$route['home/blog/(:num)/detail/(:num)'] = "home/blog/detail/$1/$2";
